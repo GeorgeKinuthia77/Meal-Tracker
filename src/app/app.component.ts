@@ -1,17 +1,14 @@
+
 import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
+import { MealTracker } from './MealTracker';
+....
 export class AppComponent {
-  title = 'Meal-Tracker';
-}
-export class AppComponent {
-  Meal-Tracker:string[];
-
-  constructor(){
-    this.Meal-Tracker = ['Chips and Chicken', 'Rice', 'Chapati and Peas']
-  }
+  MealTracker:MealTracker = [
+    {id:1, name:'Chips and Chicken'},
+    {id:2,name:'Rice'},
+    {id:3,name:'Chapati and Peas'},
+    {id:4,name:'Beanas and Rice'},
+    {id:5,name:'Beef stew and Pilau'},
+    {id:6,name:'Mokimo and Fish'},
+  ];
 }
