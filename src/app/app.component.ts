@@ -8,3 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Meal-Tracker';
 }
+export class AppComponent {
+  Meal-Tracker:string[];
+
+  constructor(){
+    this.Meal-Tracker = ['Chips and Chicken', 'Rice', 'Chapati and Peas']
+  }
+}
